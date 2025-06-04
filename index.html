@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChatDIY Mockup</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Chats</h2>
+      <button class="new-chat">+ New Chat</button>
+    </aside>
+
+    <main class="chat-section">
+      <header class="chat-header">
+        <h2>Hi Matt! Starting a new project?</h2>
+        <p>I’m your DIY assistant here to help fix, repair, and plan for your next project.</p>
+      </header>
+
+      <div class="chat-box" id="chat-box">
+        <div class="bot-msg">I need help Fixing a faucet that isn’t working right.</div>
+        <div class="bot-msg">
+          Of course! To better assist you with diagnosing your faucet problem, I have a few questions:
+          <ol>
+            <li>What type of faucet do you have?</li>
+            <li>Is the issue occurring on a specific handle (hot/cold) or both?</li>
+            <li>How old is the faucet?</li>
+            <li>Have you attempted any repairs?</li>
+            <li>Is there mineral buildup?</li>
+            <li>Can you upload a picture?</li>
+          </ol>
+        </div>
+        <div class="user-msg">The problem is with my shower faucet. It lets some hot water out but is very sticky when moving the handle.</div>
+        <div class="bot-msg">
+          It sounds like you might have an issue with the cartridge inside the one-handle shower faucet...
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="What can we help you with today?" />
+        <button onclick="sendMessage()">➤</button>
+      </div>
+    </main>
+
+    <aside class="project-panel">
+      <h3>Your Project Details: <span>Shower faucet help</span></h3>
+      <div class="photo-section">
+        <strong>User uploaded photo</strong>
+        <img src="https://via.placeholder.com/100" alt="Faucet Photo"/>
+        <p>Moen one handle shower faucet detected</p>
+      </div>
+
+      <h4>Parts Needed:</h4>
+      <img src="https://via.placeholder.com/150" alt="Replacement Part"/>
+      <p>1222 Replacement Cartridge</p>
+
+      <h4>Tools and Materials:</h4>
+      <ul>
+        <li>Screwdriver set</li>
+        <li>Pliers</li>
+        <li>Replacement cartridge</li>
+        <li>Plumber’s grease</li>
+        <li>Distilled white vinegar</li>
+      </ul>
+
+      <h4>Instructions:</h4>
+      <ol>
+        <li>Remove the Faucet Handle</li>
+        <li>Access and Remove the Cartridge</li>
+        <li>Inspect and Clean the Cartridge</li>
+        <li>Lubricate the Cartridge</li>
+      </ol>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
